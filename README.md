@@ -92,6 +92,8 @@ To leverage contextual understanding of language that goes far beyond simple wor
 **Conclusion:**  
 This approach yielded a dramatic improvement in accuracy, getting us very close to the target. While not quite 90%, this is a strong result and represents a robust, high-performing model that balances accuracy with computational efficiency.
 
+We used distilbert-base-uncased, which is small and fast. Switching to a larger model like bert-base-uncased or a crypto-specific pre-trained model like FinBERT would almost certainly push the accuracy over 90%, at the cost of a slightly slower API.
+
 ![Model Performance](image-1.png)
 
 ---
