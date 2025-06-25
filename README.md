@@ -1,7 +1,7 @@
-**Cryptocurrency Sentiment Classifier**
+# **Cryptocurrency Sentiment Classifier**
 This repository contains a complete, minimal solution for building, evaluating, and deploying a sentiment classifier for cryptocurrency-related Reddit comments. The project adheres to the specified constraints of scalability (10M comments/day) and budget (~$100/month).
 
-**Methodology & Rationale**
+# **Methodology & Rationale**
 Model Selection
 Given the constraints—high throughput and low cost—the choice of model is critical.
 
@@ -59,7 +59,7 @@ Conclusion: This approach yielded a dramatic improvement in accuracy, getting us
 
 ![alt text](image-1.png)
 
-**Deployment Architecture**
+# **Deployment Architecture**
 
 A simple uvicorn server running the FastAPI app can be deployed on a basic cloud VM.
 
@@ -67,7 +67,7 @@ A gunicorn setup with a few worker processes on a $10-$20/month VM can comfortab
 
 Alternatively, deploying to a serverless platform would be even more cost-effective, as you only pay per invocation. This architecture easily fits within the $100/month budget.
 
-**Repository Structure**
+# **Repository Structure**
 .
 ├── data/
 │   └── crypto_currency_sentiment_dataset.csv
@@ -79,20 +79,20 @@ Alternatively, deploying to a serverless platform would be even more cost-effect
 ├── train_model4.py          # Training and evaluation script
 └── README.md               # This file
 
-**Setup and How to Run**
+# **Setup and How to Run**
 1. Clone the Repository & Setup Environment
-# Clone this repository
+Clone this repository
 git clone <repository_url>
 cd <repository_directory>
 
-# Create a virtual environment
+Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install dependencies
+Install dependencies
 pip install -r requirements.txt
 
-# Download NLTK stopwords
+Download NLTK stopwords (for older versions of model)
 python -c "import nltk; nltk.download('stopwords')"
 
 2. Run EDA (Optional)
