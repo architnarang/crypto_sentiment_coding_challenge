@@ -1,0 +1,15 @@
+pandas
+scikit-learn
+joblib
+fastapi
+uvicorn[standard]
+python-multipart
+nltk
+matplotlib
+seaborn
+wordcloud
+lightgbm
+transformers
+datasets
+torch
+accelerate
